@@ -86,6 +86,25 @@ a, .fa-arrow-right{
     text-decoration: none;
     color: #E02C6D;
 }
+.extra-part-work{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 35px;
+background-color:skyblue;
+} 
+.extra-works{
+    margin: 35px;
+}
+input, .btn-1{
+    padding: 8px;
+    border-radius: 10px;
+}
+.btn-1{
+    padding: 10px 20px;
+    background-color:#E02C6D;
+    font-size: 16px;
+    color: white;
+}
 /* ------footer-------- */
 footer {
     background-color: #0A0826;
@@ -103,3 +122,49 @@ footer h4, p{
 .icon {
     padding: 5px;
 }
+/*------ footer-end-------- */
+/* @media Queries */
+/* RESPONSIVE FOR MOBILE DEVICE */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .logo {
+        text-align:center;
+    }
+    .header-area{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        display: inline-block;
+    }
+    .polular-collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .extra-part-work{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* RESPONSIVE FOR MOBILE DEVICE END*/
+
+
+/* RESPONSIVE FOR TABLET DEVICE START */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .polular-collection{
+        grid-template-columns: repeat(2, 1fr); 
+        margin-right: 56px; 
+    }
+    .link{
+        margin-right: 56px; 
+    }
+    .extra-part-work{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 56px; 
+    }
+}
+/* RESPONSIVE FOR TABLET DEVICE END */
